@@ -1,0 +1,211 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 150px;
+}
+.grid_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:45px;
+}
+.grid_container .articles{
+    grid-column: 1/span 3;
+}
+
+.articles{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+.topbar{
+    border-bottom: 2px solid black;
+}
+.articles  .h1s{
+    background-color:black;
+    color: white;
+    font-family:"Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height:17px;
+    padding:8px;
+    width: fit-content;
+    margin-bottom: 0;
+}
+
+.articles .article{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.article img{
+    width: 170px;
+    height: 160px;
+}
+.articles .article h1{
+    font-family:"Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color:black ;
+    font-size: 22px;
+    line-height: 29px;
+}
+.articles .article h1:hover{
+    color: rgb(77, 178, 236);
+}
+
+.spans{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.articles .article span{
+    font-style: normal;
+    font-weight: 400;
+    color:black;
+    font-size:11px;
+    line-height: 11px;
+    font-family:"Open Sans", "Open Sans Regular", sans-serif;
+}
+
+.articles .article span:nth-child(2){
+    color:rgb(118, 118, 118);
+ 
+}
+.articles .article p{
+    font-family:"Open Sans", "Open Sans Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color:rgb(118, 118, 118);
+    font-size:13px;
+    line-height: 21px;
+}
+
+
+/* right side */
+.advertisement{
+    margin-top:39px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.advertisement .buy_now{
+    background-image: url("https://demo.tagdiv.com/newspaper_pro/wp-content/uploads/2019/10/newspaper-rec300d.jpg.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:15px;
+    text-align: center;
+    width:300px;
+    height:250px;
+    text-align: center;
+    position: relative;
+}
+.buy_now h1{
+    position: absolute;
+    top:-29px;
+    margin-left:32%;
+    color: rgb(118, 118, 118);
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.advertisement .div2 .topbar2 .h1{
+    background-color:rgb(149, 13, 177);
+    color: white;
+    font-family:"Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding:5px;
+    width: fit-content;
+    margin-bottom: 0;
+}
+
+.advertisement .div2 .topbar2{
+    border-bottom: 2px solid rgb(149, 13, 177);
+}
+
+
+.advertisement .div2  h1{
+    font-family:Roboto, sans-serif ;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+.advertisement .div2  h1:hover{
+   color: rgb(137, 84, 193);
+}
+.spans-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+.spans-button button{
+    background-color: black;
+    padding: 5px;
+    color: white;
+    border: none;
+    margin-bottom:10px;
+}
+
+.advertisement .div2 span{
+    font-style: normal;
+    font-weight: 400;
+    color:black;
+    font-size:11px;
+    line-height: 11px;
+    font-family:"Open Sans", "Open Sans Regular", sans-serif;
+    margin-bottom:10px;
+}
+
+.advertisement .div2 span:nth-child(2){
+    color:rgb(118, 118, 118);
+ 
+}
+
+.advertisement .div2 img{
+     width:100%;
+     height: 158px;
+}
+
+.advertisement .div2 p{
+   font-family:"Open Sans", "Open Sans Regular", sans-serif;
+   color:rgb(118, 118, 118) ;
+   font-style:normal;
+   font-weight: 400;
+   font-size: 13px;
+   line-height:21px;
+}
+.buttons{
+   display: flex;
+   gap:10px;
+}
+.buttons button{
+    background-color:transparent;
+    color: rgb(163, 163, 163);   
+    border:1px solid  rgb(163, 163, 163);   
+    padding:5px ;
+    width:30px;
+}
+.buttons button:hover{
+    background-color: rgb(149, 13, 177);;
+}
+.advertisement .div2 h3{
+    background-color: black;
+    color: white;
+    width: fit-content;
+    position: absolute;
+    bottom:-62px;
+    font-size: 15px;
+    padding: 3px;
+}
+.advertisement .div2 img{
+    position: relative;
+}
